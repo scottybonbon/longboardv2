@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-finish="walnut">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Longboard® — Wood's Soul. Aluminum's Spine.</title>
+<meta name="description" content="Extruded aluminum cladding, siding, soffit and ceilings with sublimated woodgrain finishes. Designed, extruded, finished and shipped from British Columbia.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="Longboard® — Wood's Soul. Aluminum's Spine.">
+<meta property="og:description" content="Extruded aluminum cladding, siding, soffit and ceilings with sublimated woodgrain finishes. Designed, extruded, finished and shipped from British Columbia.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400&family=Schibsted+Grotesk:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/site.js" defer></script>
+<style>
+  /* Home hero — the installation reveal: three courses wipe off like boards locking in */
+  .hero-course { position: absolute; left: 0; right: 0; background: var(--primer); transform-origin: right center; }
+  .hero-course:nth-child(1) { top: 0;     height: 33.5%; animation: lbCourse 0.9s cubic-bezier(0.65,0,0.35,1) 0.35s both; }
+  .hero-course:nth-child(2) { top: 33.3%; height: 33.6%; animation: lbCourse 0.9s cubic-bezier(0.65,0,0.35,1) 0.49s both; }
+  .hero-course:nth-child(3) { top: 66.6%; height: 33.6%; animation: lbCourse 0.9s cubic-bezier(0.65,0,0.35,1) 0.63s both; }
+  .hero-line { display: block; overflow: hidden; padding-bottom: 0.05em; margin-bottom: -0.05em; }
+  .hero-line > span { display: block; animation: lbLine 0.9s cubic-bezier(0.22,1,0.36,1) both; }
+  .hero-fade { animation: lbFade 0.8s ease both; }
+  .home-hero .hero-img { animation: lbZoom 2.4s cubic-bezier(0.22,1,0.36,1) 0.5s both; }
+  @media (max-width: 480px) { .home-hero h1 { font-size: clamp(38px, 11.5vw, 52px) !important; } }
+  .door {
+    position: relative; display: flex; flex-direction: column; text-decoration: none;
+    color: var(--paper); min-height: 300px; padding: 28px 28px 34px; overflow: hidden;
+  }
+  @media (min-width: 720px) { .door { min-height: 360px; } }
+  .door img, .door .door-scrim { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .door img { object-fit: cover; z-index: -2; }
+  .door .door-scrim { background: linear-gradient(180deg, rgba(23,25,27,0.25), rgba(23,25,27,0.78)); z-index: -1; }
+  .door .door-title {
+    margin-top: 44px; font-family: Archivo, sans-serif; font-variation-settings: "wdth" 120;
+    font-weight: 800; font-size: clamp(26px, 2.6vw, 38px); text-transform: uppercase; line-height: 1;
+  }
+  .door .door-list { margin-top: 22px; font-size: 14.5px; line-height: 1.8; color: rgba(245,244,242,0.85); }
+  .door .door-arrow { margin-top: auto; padding-top: 32px; font-family: Archivo, sans-serif; font-size: 15px; font-weight: 500; }
+  .doors { display: grid; grid-template-columns: 1fr; gap: 4px; }
+  @media (min-width: 900px) { .doors { grid-template-columns: 1fr 1fr 1fr; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="wordmark" href="index.html">Longboard<sup>®</sup></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="applications.html">Applications</a>
+      <a href="hitch.html">Systems</a>
+      <a href="finishes.html">Finishes</a>
+      <a href="projects.html">Projects</a>
+      <a href="#resources">Resources</a>
+      <a href="design-assist.html">Support</a>
+      <a href="facility.html">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="finishes.html#samples">Order samples</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+  </div>
+</header>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-head">
+    <span class="wordmark">Longboard<sup>®</sup></span>
+    <button class="overlay-close">Close</button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="applications.html">Applications</a>
+    <a href="hitch.html">Systems</a>
+    <a href="finishes.html">Finishes</a>
+    <a href="projects.html">Projects</a>
+    <a href="#resources">Resources</a>
+    <a href="design-assist.html">Support</a>
+    <a href="#contact">Contact</a>
+    <a href="finishes.html#samples">Order samples</a>
+  </nav>
+</div>
+
+<main id="main">
+
+  <!-- HERO — the material is the landing experience -->
+  <section class="page-hero page-hero--tall home-hero" aria-label="Introduction">
+    <img class="hero-img" src="assets/hero-volume.jpg" alt="Woodgrain aluminum cladding wrapping a cantilevered building volume against a clear sky" fetchpriority="high">
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div aria-hidden="true"><div class="hero-course"></div><div class="hero-course"></div><div class="hero-course"></div></div>
+    <!-- installation reveal v2 — seam flashes at the seat moments (LB-CD 2.0/04, adopted) -->
+    <div aria-hidden="true"><div class="hero-flash"></div><div class="hero-flash"></div><div class="hero-flash"></div></div>
+    <div class="container">
+      <span class="hero-eyebrow hero-fade" style="animation-delay: 1.3s;">Designed, extruded, finished and shipped from British Columbia.</span>
+      <h1 class="display" style="font-size: clamp(52px, 8.6vw, 150px);">
+        <span class="hero-line"><span style="animation-delay: 0.9s;">Wood&rsquo;s soul.</span></span>
+        <span class="hero-line"><span style="animation-delay: 1.04s;">Aluminum&rsquo;s spine.</span></span>
+      </h1>
+      <p class="hero-dek hero-fade" style="animation-delay: 1.2s;">Real wood looks like this for five years. <span style="color: #e2b98a;">This looks like this for fifty.</span></p>
+      <div class="hero-fade" style="margin-top: 26px; animation-delay: 1.5s;">
+        <span class="spec" style="color: rgba(245,244,242,0.7);">Red Lion Hotel — Tongue &amp; Groove cladding, 24' boards</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- THREE DISTANCES -->
+  <section class="container" style="padding-top: var(--section-y); padding-bottom: var(--section-y);" aria-label="The product at three distances">
+    <div class="grid-3">
+      <figure data-reveal style="margin: 0;">
+        <div style="aspect-ratio: 3 / 4; overflow: hidden;">
+          <img data-zoom src="assets/macro-siding.jpg" alt="Close view of woodgrain aluminum boards meeting at a corner" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <figcaption class="spec" style="margin-top: 14px; font-size: 13.5px;">The grain</figcaption>
+      </figure>
+      <figure data-reveal style="margin: 0;">
+        <div style="aspect-ratio: 3 / 4; overflow: hidden;">
+          <img data-zoom src="assets/wall-window.jpg" alt="Woodgrain panel beside a corner window reflecting sky" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <figcaption class="spec" style="margin-top: 14px; font-size: 13.5px;">The wall</figcaption>
+      </figure>
+      <figure data-reveal style="margin: 0;">
+        <div style="aspect-ratio: 3 / 4; overflow: hidden;">
+          <img data-zoom src="assets/canopy.jpg" alt="Civic building with woodgrain soffit canopy and V-columns at dusk" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <figcaption class="spec" style="margin-top: 14px; font-size: 13.5px;">The architecture</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- BREATHING ROOM -->
+  <section style="position: relative; height: 78vh; min-height: 440px; overflow: hidden;" aria-label="Pemberton Plaza at dusk">
+    <img data-reveal data-zoom src="assets/pemberton-dusk.jpg" alt="Woodgrain aluminum siding and privacy screens glowing warm at dusk against a grey building" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;">
+    <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(0deg, rgba(23,25,27,0.5), rgba(23,25,27,0) 30%);"></div>
+    <span class="spec" style="position: absolute; left: var(--pad-x); bottom: 24px; color: rgba(245,244,242,0.8);">Pemberton Plaza — one warm material against grey, at dusk</span>
+  </section>
+
+  <!-- THE LONGBOARD SYSTEM -->
+  <section id="system" class="container section" aria-labelledby="system-h">
+    <div class="section-title" data-reveal>
+      <h2 id="system-h" class="h-section">The Longboard System</h2>
+    </div>
+    <p class="lede" data-reveal style="margin-bottom: 56px;">Where it goes, how it works, what it looks like. Three doors into one catalogue — non-combustible, VOC-free, 100% recyclable aluminum.</p>
+    <div class="doors">
+      <a class="door" data-reveal href="applications.html">
+        <img src="assets/linq-corridor.jpg" alt="" loading="lazy">
+        <div class="door-scrim" aria-hidden="true"></div>
+        <span style="font-size: 14px; color: rgba(245,244,242,0.75);">Where it goes</span>
+        <span class="door-title">Applications</span>
+        <span class="door-list">Cladding · Siding · Soffit · Screens &amp; Enclosures<br>Ceilings · Interior Walls · Acoustic Solutions</span>
+        <span class="door-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="door" data-reveal href="hitch.html">
+        <img src="assets/privacy-beams.jpg" alt="" loading="lazy">
+        <div class="door-scrim" aria-hidden="true"></div>
+        <span style="font-size: 14px; color: rgba(245,244,242,0.75);">How it works</span>
+        <span class="door-title">Systems</span>
+        <span class="door-list">HITCH™ · Link &amp; Lock™<br>Tongue &amp; Groove · Dauntless</span>
+        <span class="door-arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="door sublimate" data-reveal href="finishes.html" style="background: none;">
+        <span class="grain-live" aria-hidden="true" style="position: absolute; inset: 0; z-index: -1; background: linear-gradient(160deg, var(--finish), var(--finish-deep)); transition: background 0.5s;"></span>
+        <span style="font-size: 14px; color: rgba(245,244,242,0.8);">What it looks like</span>
+        <span class="door-title">Finishes</span>
+        <span class="door-list" style="color: rgba(245,244,242,0.9);">50+ standard finishes<br>Custom RAL matching in 200+ colors</span>
+        <span class="door-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- PROJECT INDEX -->
+  <section id="projects" class="container" style="padding-bottom: var(--section-y);" aria-labelledby="projects-h">
+    <div class="section-title section-title--roomy" data-reveal>
+      <h2 id="projects-h" class="h-section">Selected work</h2>
+    </div>
+
+    <div data-index style="position: relative;">
+      <div class="index-head" aria-hidden="true">
+        <span>Project</span><span>Location</span><span>Architect</span><span>Product</span><span class="cell-end">Finish</span>
+      </div>
+
+      <a class="index-row" data-reveal href="case-alberni.html" data-img="assets/alberni-dusk.jpg">
+        <span class="h-index" style="font-size: clamp(18px, 1.8vw, 22px);">The Alberni Tower</span>
+        <span class="cell" data-label="Location">Vancouver, BC</span>
+        <span class="cell" data-label="Architect">Kengo Kuma &amp; Associates</span>
+        <span class="cell" data-label="Product">Custom extrusion</span>
+        <span class="cell cell-end" data-label="Finish">National Walnut</span>
+      </a>
+      <a class="index-row" data-reveal href="projects.html" data-img="assets/canopy.jpg">
+        <span class="h-index" style="font-size: clamp(18px, 1.8vw, 22px);">Marine Gateway Pavilion</span>
+        <span class="cell" data-label="Location">Richmond, BC</span>
+        <span class="cell" data-label="Architect">Perkins&amp;Will</span>
+        <span class="cell" data-label="Product">4" V-Groove soffit</span>
+        <span class="cell cell-end" data-label="Finish">Light Cherry</span>
+      </a>
+      <a class="index-row" data-reveal href="projects.html" data-img="assets/wall-window.jpg">
+        <span class="h-index" style="font-size: clamp(18px, 1.8vw, 22px);">Point Grey Residence</span>
+        <span class="cell" data-label="Location">Vancouver, BC</span>
+        <span class="cell" data-label="Architect">Battersby Howat</span>
+        <span class="cell" data-label="Product">6" Smooth siding</span>
+        <span class="cell cell-end" data-label="Finish">Dark Fir</span>
+      </a>
+      <a class="index-row" data-reveal href="projects.html" data-img="assets/fins.jpg">
+        <span class="h-index" style="font-size: clamp(18px, 1.8vw, 22px);">The Brixton</span>
+        <span class="cell" data-label="Location">Toronto, ON</span>
+        <span class="cell" data-label="Architect">Studio JCI</span>
+        <span class="cell" data-label="Product">Link &amp; Lock™ fins</span>
+        <span class="cell cell-end" data-label="Finish">Light Cherry</span>
+      </a>
+      <a class="index-row" data-reveal href="projects.html" data-img="assets/baffles.jpg">
+        <span class="h-index" style="font-size: clamp(18px, 1.8vw, 22px);">Senákw Phase 1</span>
+        <span class="cell" data-label="Location">Vancouver, BC</span>
+        <span class="cell" data-label="Architect">Revery Architecture</span>
+        <span class="cell" data-label="Product">6" V-Groove soffit</span>
+        <span class="cell cell-end" data-label="Finish">National Walnut</span>
+      </a>
+
+      <img class="index-preview" src="assets/alberni-dusk.jpg" alt="" aria-hidden="true">
+    </div>
+
+    <div data-reveal style="margin-top: 40px;">
+      <a class="link-rule" href="projects.html">All projects →</a>
+    </div>
+  </section>
+
+  <!-- CINEMATIC BAND — The Brixton -->
+  <section class="band-dark" style="position: relative; overflow: hidden;" aria-label="The Brixton, Toronto">
+    <img src="assets/fins.jpg" alt="Vertical woodgrain aluminum fins climbing a facade, lit by evening sun" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 30%;">
+    <div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(23,25,27,0.45), rgba(23,25,27,0.1) 50%, rgba(23,25,27,0.65));"></div>
+    <div class="container" style="position: relative; padding-top: 28vh; padding-bottom: 28vh; color: var(--paper);">
+      <span class="spec" data-reveal style="display: block; font-size: 14px; color: rgba(245,244,242,0.75); margin-bottom: 28px;">Toronto — Link &amp; Lock™ fins in Light Cherry</span>
+      <p class="display" data-reveal style="font-variation-settings: 'wdth' 122; font-size: clamp(48px, 8.6vw, 132px); line-height: 0.94; margin: 0;">The Brixton</p>
+    </div>
+  </section>
+
+  <!-- FINISHES -->
+  <section id="finishes" class="container section" aria-labelledby="finishes-h">
+    <div class="section-title section-title--roomy" data-reveal>
+      <h2 id="finishes-h" class="h-section">Fifty finishes. One accent.</h2>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: var(--board); flex-wrap: wrap; margin-bottom: 56px;">
+      <p class="lede" data-reveal>Every finish here is the true material — sublimated woodgrain on extruded aluminum. Select one and the site re-coats itself, top to bottom.</p>
+      <div class="finish-switcher" data-reveal role="group" aria-label="Finish switcher">
+        <button class="finish-btn" data-finish-key="cherry" aria-pressed="false"><span class="swatch" style="background: linear-gradient(#d98e55, #8a4a24);"></span><span>Light Cherry</span></button>
+        <button class="finish-btn" data-finish-key="walnut" aria-pressed="true"><span class="swatch" style="background: linear-gradient(#b07e4e, #684226);"></span><span>National Walnut</span></button>
+        <button class="finish-btn" data-finish-key="fir" aria-pressed="false"><span class="swatch" style="background: linear-gradient(#83643f, #41311f);"></span><span>Dark Fir</span></button>
+        <button class="finish-btn" data-finish-key="slate" aria-pressed="false"><span class="swatch" style="background: linear-gradient(#8b979f, #414a53);"></span><span>Slate</span></button>
+      </div>
+    </div>
+    <div class="sublimate" data-reveal style="position: relative; height: 320px; overflow: hidden;">
+      <div class="grain grain-live" style="position: absolute; inset: 0; --g1: var(--finish); --g2: var(--finish-deep);"></div>
+      <div class="sweep" aria-hidden="true"></div>
+      <span class="spec" style="position: absolute; left: 24px; bottom: 18px; font-size: 12.5px; color: rgba(255,255,255,0.85); z-index: 2;"><span data-active-finish-name>National Walnut</span> — 6" board</span>
+    </div>
+    <div data-reveal style="margin-top: 40px;">
+      <a class="link-rule" href="finishes.html">All 50+ finishes →</a>
+    </div>
+  </section>
+
+  <!-- RESOURCE HUB -->
+  <section id="resources" class="container" style="padding-bottom: var(--section-y);" aria-labelledby="resources-h">
+    <div class="section-title" data-reveal>
+      <h2 id="resources-h" class="h-section">Resources</h2>
+    </div>
+    <p class="lede" data-reveal style="margin-bottom: 48px;">For the spec writer who skips the poetry.</p>
+
+    <a class="resource-row" data-reveal href="hitch.html#documents">
+      <span class="h-index" style="font-size: 20px;">Technical Documentation</span>
+      <span class="rr-desc">Install guides, submittals, CAD files and warranties for every system.</span>
+      <span class="rr-arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="resource-row" data-reveal href="finishes.html#resources-finishes">
+      <span class="h-index" style="font-size: 20px;">Knowledge Centre</span>
+      <span class="rr-desc">How sublimation works. Rainscreen principles. Acoustic design.</span>
+      <span class="rr-arrow" aria-hidden="true">→</span>
+    </a>
+    <a class="resource-row" data-reveal href="#contact">
+      <span class="h-index" style="font-size: 20px;">Articles</span>
+      <span class="rr-desc">News and press — Passive House certification, awards, milestones.</span>
+      <span class="rr-arrow" aria-hidden="true">→</span>
+    </a>
+  </section>
+
+  <!-- PROOF + CONTACT -->
+  <section id="contact" class="band-dark" aria-labelledby="contact-h">
+    <div class="container" style="padding-top: 120px; padding-bottom: 120px;">
+      <div class="stat-grid">
+        <div class="stat" data-reveal><div class="spec-num">94%</div><p>Thermal efficiency with HITCH</p></div>
+        <div class="stat" data-reveal><div class="spec-num">50 yr</div><p>Structural warranty, non-pro-rated</p></div>
+        <div class="stat" data-reveal><div class="spec-num">2 wks</div><p>Popular finishes, ready to ship</p></div>
+        <div class="stat" data-reveal><div class="spec-num">6×</div><p>Lower-carbon Canadian aluminum</p></div>
+      </div>
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: var(--board); flex-wrap: wrap; padding-top: 96px;">
+        <div data-reveal>
+          <h2 id="contact-h" class="display" style="font-variation-settings: 'wdth' 122; font-size: clamp(36px, 5.4vw, 84px); line-height: 0.96;">See it in<br>your hands.</h2>
+          <p style="margin: 28px 0 0; font-size: 15px; color: var(--paper-faint);">Screens can&rsquo;t render a sublimated finish. Hold one.</p>
+        </div>
+        <a class="btn btn-finish" data-reveal href="finishes.html#samples">Order samples →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="wordmark" style="font-size: 15px; color: var(--paper);">Longboard<sup>®</sup></span>
+    <nav aria-label="Footer">
+      <a href="applications.html">Applications</a>
+      <a href="hitch.html">Systems</a>
+      <a href="finishes.html">Finishes</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#resources">Resources</a>
+      <a href="design-assist.html">Support</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <span class="foot-legal">1777 Clearbrook Rd, Abbotsford BC · 1-800-604-0343 · © 2026 Longboard®</span>
+  </div>
+</footer>
+</body>
+</html>

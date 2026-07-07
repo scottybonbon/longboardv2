@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-finish="walnut">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects — The Index | Longboard®</title>
+<meta name="description" content="The Longboard project index: buildings wearing extruded aluminum with sublimated woodgrain finishes, by project, location, architect, product and finish.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="Projects — The Index | Longboard®">
+<meta property="og:description" content="The Longboard project index: buildings wearing extruded aluminum with sublimated woodgrain finishes, by project, location, architect, product and finish.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400&family=Schibsted+Grotesk:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<script src="js/site.js" defer></script>
+<style>
+  .projects-hero { padding-top: 160px; }
+  .projects-hero h1 { font-size: clamp(48px, 9vw, 150px); }
+  .gallery-grid { display: grid; grid-template-columns: 1fr; gap: var(--board) var(--gutter); }
+  @media (min-width: 720px)  { .gallery-grid { grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1100px) { .gallery-grid { grid-template-columns: 1fr 1fr 1fr; } }
+  .gallery-card { margin: 0; }
+  .gallery-card .g-img { aspect-ratio: 4 / 3; overflow: hidden; }
+  .gallery-card img { width: 100%; height: 100%; object-fit: cover; }
+  .gallery-card figcaption { margin-top: 12px; }
+  .toggle-row { display: flex; justify-content: space-between; align-items: center; gap: var(--gutter); flex-wrap: wrap; margin-bottom: var(--half); }
+  .filterbar { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule-light); padding: var(--half) 0; display: grid; gap: 14px; margin-bottom: var(--board); }
+  .filter-row { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .case-feature { border: 1px solid var(--rule); background: var(--paper); }
+  .case-feature .cf-img { aspect-ratio: 21 / 9; overflow: hidden; }
+  .case-feature img { width: 100%; height: 100%; object-fit: cover; }
+  .case-feature .cf-body { padding: var(--half) var(--half) var(--board); }
+  .titleblock { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px var(--gutter); border-top: 1px solid var(--rule); margin-top: var(--half); padding-top: var(--half); }
+  @media (min-width: 900px) { .titleblock { grid-template-columns: repeat(4, 1fr); } }
+  .titleblock .tb-label { display: block; font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); }
+  .titleblock .tb-value { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--ink); }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header" data-header-solid>
+  <div class="container">
+    <a class="wordmark" href="index.html">Longboard<sup>®</sup></a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="applications.html">Applications</a>
+      <a href="hitch.html">Systems</a>
+      <a href="finishes.html">Finishes</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="index.html#resources">Resources</a>
+      <a href="design-assist.html">Support</a>
+      <a href="facility.html">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="finishes.html#samples">Order samples</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+  </div>
+</header>
+<div class="mobile-nav" id="mobile-nav">
+  <div class="mobile-nav-head">
+    <span class="wordmark">Longboard<sup>®</sup></span>
+    <button class="overlay-close">Close</button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="applications.html">Applications</a>
+    <a href="hitch.html">Systems</a>
+    <a href="finishes.html">Finishes</a>
+    <a href="projects.html">Projects</a>
+    <a href="index.html#resources">Resources</a>
+    <a href="design-assist.html">Support</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="finishes.html#samples">Order samples</a>
+  </nav>
+</div>
+
+<main id="main">
+
+  <!-- HERO — typographic. The index is the hero. -->
+  <section class="container projects-hero" aria-labelledby="proj-h">
+    <span class="eyebrow" style="display: block; margin-bottom: 22px;">Projects — the proof layer</span>
+    <h1 id="proj-h" class="display">The index.</h1>
+    <p class="lede" style="margin-top: 22px;">Every building here wears the same argument: wood&rsquo;s soul, aluminum&rsquo;s spine.</p>
+  </section>
+
+  <!-- TOGGLE + FILTERS + FEED -->
+  <section class="container section" style="padding-top: var(--board);" aria-label="Project feed">
+    <div class="toggle-row" data-viewtoggle data-reveal>
+      <div class="filter-group" role="group" aria-label="Content view">
+        <button class="chip" data-view="gallery" aria-pressed="true">Gallery</button>
+        <button class="chip" data-view="cases" aria-pressed="false">Case Studies</button>
+      </div>
+      <span class="spec"><span id="project-count">11</span> projects on record</span>
+    </div>
+
+    <div data-view-panel="gallery">
+      <div class="filterbar" data-reveal data-filterbar="#project-index" data-count="#project-count">
+        <div class="filter-row">
+          <span class="filter-label" id="pf-app">Application</span>
+          <div class="filter-group" role="group" aria-labelledby="pf-app">
+            <button class="chip" data-facet="app" data-value="all" aria-pressed="true">All</button>
+            <button class="chip" data-facet="app" data-value="cladding" aria-pressed="false">Cladding</button>
+            <button class="chip" data-facet="app" data-value="siding" aria-pressed="false">Siding</button>
+            <button class="chip" data-facet="app" data-value="soffit" aria-pressed="false">Soffit</button>
+            <button class="chip" data-facet="app" data-value="screens" aria-pressed="false">Screens &amp; Enclosures</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label" id="pf-sys">System</span>
+          <div class="filter-group" role="group" aria-labelledby="pf-sys">
+            <button class="chip" data-facet="system" data-value="all" aria-pressed="true">All</button>
+            <button class="chip" data-facet="system" data-value="tg" aria-pressed="false">Tongue &amp; Groove</button>
+            <button class="chip" data-facet="system" data-value="linklock" aria-pressed="false">Link &amp; Lock™</button>
+            <button class="chip" data-facet="system" data-value="custom" aria-pressed="false">Custom extrusion</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label" id="pf-fin">Finish</span>
+          <div class="filter-group" role="group" aria-labelledby="pf-fin">
+            <button class="chip" data-facet="finish" data-value="all" aria-pressed="true">All</button>
+            <button class="chip" data-facet="finish" data-value="cherry" aria-pressed="false">Light Cherry</button>
+            <button class="chip" data-facet="finish" data-value="walnut" aria-pressed="false">National Walnut</button>
+            <button class="chip" data-facet="finish" data-value="fir" aria-pressed="false">Dark Fir</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label" id="pf-region">Region</span>
+          <div class="filter-group" role="group" aria-labelledby="pf-region">
+            <button class="chip" data-facet="region" data-value="all" aria-pressed="true">All</button>
+            <button class="chip" data-facet="region" data-value="bc" aria-pressed="false">British Columbia</button>
+            <button class="chip" data-facet="region" data-value="on" aria-pressed="false">Ontario</button>
+          </div>
+        </div>
+        <div class="filter-row">
+          <span class="filter-label" id="pf-typ">Typology</span>
+          <div class="filter-group" role="group" aria-labelledby="pf-typ">
+            <button class="chip" data-facet="typology" data-value="all" aria-pressed="true">All</button>
+            <button class="chip" data-facet="typology" data-value="residential" aria-pressed="false">Residential</button>
+            <button class="chip" data-facet="typology" data-value="civic" aria-pressed="false">Civic</button>
+            <button class="chip" data-facet="typology" data-value="hospitality" aria-pressed="false">Hospitality</button>
+            <button class="chip" data-facet="typology" data-value="commercial" aria-pressed="false">Commercial</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="project-index" data-index style="position: relative;">
+        <div class="index-head" aria-hidden="true">
+          <span>Project</span><span>Location</span><span>Architect</span><span>Product</span><span class="cell-end">Finish</span>
+        </div>
+
+        <a class="index-row" data-reveal data-filter-item href="case-alberni.html" data-img="assets/alberni-dusk.jpg"
+           data-app="screens cladding" data-system="custom" data-finish="walnut" data-region="bc" data-typology="residential">
+          <span class="h-index">The Alberni Tower</span>
+          <span class="cell" data-label="Location">Vancouver, BC</span>
+          <span class="cell" data-label="Architect">Kengo Kuma &amp; Associates</span>
+          <span class="cell" data-label="Product">Custom extrusion — 26,000+ lin. ft.</span>
+          <span class="cell cell-end" data-label="Finish">National Walnut</span>
+        </a>
+        <a class="index-row" data-reveal data-filter-item href="#gallery-grid" data-img="assets/canopy.jpg"
+           data-app="soffit" data-system="tg" data-finish="cherry" data-region="bc" data-typology="civic">
+          <span class="h-index">Marine Gateway Pavilion</span>
+          <span class="cell" data-label="Location">Richmond, BC</span>
+          <span class="cell" data-label="Architect">Perkins&amp;Will</span>
+          <span class="cell" data-label="Product">4" V-Groove soffit</span>
+          <span class="cell cell-end" data-label="Finish">Light Cherry</span>
+        </a>
+        <a class="index-row" data-reveal data-filter-item href="#gallery-grid" data-img="assets/wall-window.jpg"
+           data-app="siding" data-system="tg" data-finish="fir" data-region="bc" data-typology="residential">
+          <span class="h-index">Point Grey Residence</span>
+          <span class="cell" data-label="Location">Vancouver, BC</span>
+          <span class="cell" data-label="Architect">Battersby Howat</span>
+          <span class="cell" data-label="Product">6" Smooth siding</span>
+          <span class="cell cell-end" data-label="Finish">Dark Fir</span>
+        </a>
+        <a class="index-row" data-reveal data-filter-item href="#gallery-grid" data-img="assets/fins.jpg"
+           data-app="screens" data-system="linklock" data-finish="cherry" data-region="on" data-typology="residential">
+          <span class="h-index">The Brixton</span>
+          <span class="cell" data-label="Location">Toronto, ON</span>
+          <span class="cell" data-label="Architect">Studio JCI</span>
+          <span class="cell" data-label="Product">Link &amp; Lock™ fins</span>
+          <span class="cell cell-end" data-label="Finish">Light Cherry</span>
+        </a>
+        <a class="index-row" data-reveal data-filter-item href="#gallery-grid" data-img="assets/baffles.jpg"
+           data-app="soffit" data-system="tg" data-finish="walnut" data-region="bc" data-typology="residential">
+          <span class="h-index">Senákw Phase 1</span>
+          <span class="cell" data-label="Location">Vancouver, BC</span>
+          <span class="cell" data-label="Architect">Revery Architecture</span>
+          <span class="cell" data-label="Product">6" V-Groove soffit</span>
+          <span class="cell cell-end" data-label="Finish">National Walnut</span>
+        </a>
+        <a class="index-row" data-reveal data-filter-item href="#gallery-grid" data-img="assets/pemberton-dusk.jpg"
+           data-app="siding screens" data-region="bc" data-typology="commercial">
+          <span class="h-index">Pemberton Plaza</span>
+          <span class="cell" data-label="Location">British Columbia</span>
+          <span class="cell" data-label="Architect">—</span>
+          <span class="cell" data-label="Product">Siding + privacy screens</span>
+          <span class="cell cell-end" data-label="Finish">—</span>
+        </a>
+        <a class="index-row" data-reveal data-filter-item href="#gallery-grid" data-img="assets/hero-volume.jpg"
+           data-app="cladding" data-system="tg" data-typology="hospitality">
+          <span class="h-index">Red Lion Hotel</span>
+          <span class="cell" data-label="Location">—</span>
+          <span class="cell" data-label="Architect">—</span>
+          <span class="cell" data-label="Product">Tongue &amp; Groove cladding, 24' boards</span>
+          <span class="cell cell-end" data-label="Finish">—</span>
+        </a>
+        <a class="index-row" data-reveal data-filter-item href="#gallery-grid" data-img="assets/emerald-city.jpg"
+           data-app="cladding" data-region="on" data-typology="residential">
+          <span class="h-index">The Towns at Emerald City</span>
+          <span class="cell" data-label="Location">Toronto, ON</span>
+          <span class="cell" data-label="Architect">—</span>
+          <span class="cell" data-label="Product">Exterior cladding</span>
+          <span class="cell cell-end" data-label="Finish">—</span>
+        </a>
+        <a class="index-row" data-reveal data-filter-item href="#gallery-grid" data-img="assets/linq-exterior.jpg"
+           data-app="cladding" data-typology="residential">
+          <span class="h-index">The Linq Lofts &amp; Flats</span>
+          <span class="cell" data-label="Location">—</span>
+          <span class="cell" data-label="Architect">—</span>
+          <span class="cell" data-label="Product">Exterior cladding + corridor soffit</span>
+          <span class="cell cell-end" data-label="Finish">—</span>
+        </a>
+        <a class="index-row" data-reveal data-filter-item href="#gallery-grid" data-img="assets/tweed.jpg"
+           data-app="cladding" data-typology="civic">
+          <span class="h-index">Tweed Visitor Centre</span>
+          <span class="cell" data-label="Location">—</span>
+          <span class="cell" data-label="Architect">—</span>
+          <span class="cell" data-label="Product">Exterior cladding</span>
+          <span class="cell cell-end" data-label="Finish">—</span>
+        </a>
+        <a class="index-row" data-reveal data-filter-item href="#gallery-grid" data-img="assets/sherwood.jpg"
+           data-app="siding" data-typology="residential">
+          <span class="h-index">Sherwood</span>
+          <span class="cell" data-label="Location">—</span>
+          <span class="cell" data-label="Architect">—</span>
+          <span class="cell" data-label="Product">Exterior siding</span>
+          <span class="cell cell-end" data-label="Finish">—</span>
+        </a>
+
+        <img class="index-preview" src="assets/alberni-dusk.jpg" alt="" aria-hidden="true">
+      </div>
+
+      <!-- GALLERY GRID — the same record, photo-forward. The finish is the protagonist. -->
+      <div id="gallery-grid" class="gallery-grid" style="margin-top: var(--section-y);">
+        <figure class="gallery-card" data-reveal>
+          <div class="g-img"><img data-zoom src="assets/alberni-dusk.jpg" alt="The Alberni Tower at dusk, twisting above Alberni Street" loading="lazy" style="object-position: 50% 30%;"></div>
+          <figcaption><span class="h-index" style="font-size: 16px;">The Alberni Tower</span><br><span class="spec">National Walnut — custom extrusion</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-reveal>
+          <div class="g-img"><img data-zoom src="assets/canopy.jpg" alt="Marine Gateway Pavilion's woodgrain soffit canopy on V-columns at dusk" loading="lazy"></div>
+          <figcaption><span class="h-index" style="font-size: 16px;">Marine Gateway Pavilion</span><br><span class="spec">Light Cherry — 4" V-Groove soffit</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-reveal>
+          <div class="g-img"><img data-zoom src="assets/fins.jpg" alt="Vertical woodgrain fins on The Brixton facade in evening light" loading="lazy"></div>
+          <figcaption><span class="h-index" style="font-size: 16px;">The Brixton</span><br><span class="spec">Light Cherry — Link &amp; Lock™ fins</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-reveal>
+          <div class="g-img"><img data-zoom src="assets/pemberton-dusk.jpg" alt="Pemberton Plaza siding and privacy screens glowing at dusk" loading="lazy"></div>
+          <figcaption><span class="h-index" style="font-size: 16px;">Pemberton Plaza</span><br><span class="spec">Finish attribution pending</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-reveal>
+          <div class="g-img"><img data-zoom src="assets/emerald-city.jpg" alt="The Towns at Emerald City with woodgrain aluminum cladding accents" loading="lazy"></div>
+          <figcaption><span class="h-index" style="font-size: 16px;">The Towns at Emerald City</span><br><span class="spec">Finish attribution pending</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-reveal>
+          <div class="g-img"><img data-zoom src="assets/linq-exterior.jpg" alt="The Linq Lofts and Flats exterior with woodgrain aluminum cladding" loading="lazy"></div>
+          <figcaption><span class="h-index" style="font-size: 16px;">The Linq Lofts &amp; Flats</span><br><span class="spec">Finish attribution pending</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-reveal>
+          <div class="g-img"><img data-zoom src="assets/tweed.jpg" alt="Tweed Visitor Centre exterior clad in woodgrain aluminum" loading="lazy"></div>
+          <figcaption><span class="h-index" style="font-size: 16px;">Tweed Visitor Centre</span><br><span class="spec">Finish attribution pending</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-reveal>
+          <div class="g-img"><img data-zoom src="assets/sherwood.jpg" alt="Sherwood residence with woodgrain aluminum siding" loading="lazy"></div>
+          <figcaption><span class="h-index" style="font-size: 16px;">Sherwood</span><br><span class="spec">Finish attribution pending</span></figcaption>
+        </figure>
+        <figure class="gallery-card" data-reveal>
+          <div class="g-img"><img data-zoom src="assets/hero-volume.jpg" alt="Red Lion Hotel wrapped in tongue and groove woodgrain cladding" loading="lazy"></div>
+          <figcaption><span class="h-index" style="font-size: 16px;">Red Lion Hotel</span><br><span class="spec">Tongue &amp; Groove cladding, 24' boards</span></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- CASE STUDIES VIEW -->
+    <div data-view-panel="cases" hidden>
+      <article id="case-alberni" class="case-feature" data-reveal>
+        <div class="cf-img"><img src="assets/alberni-detail.jpg" alt="The underside of Alberni Tower's balconies in custom woodgrain aluminum" loading="lazy" style="object-position: 50% 45%;"></div>
+        <div class="cf-body">
+          <span class="spec" style="display: block; margin-bottom: 14px;">Case study — flagship</span>
+          <h2 class="h-section" style="font-size: clamp(26px, 3.4vw, 44px);">The Alberni Tower</h2>
+          <p class="lede" style="margin-top: 18px;">Kengo Kuma&rsquo;s first Canadian tower asked for wood where wood couldn&rsquo;t go: curved, high, and exposed for decades. The answer was 26,000+ linear feet of custom Longboard extrusion in National Walnut — designed, extruded, and finished in Abbotsford, then installed as a facade that will not silver, split, or burn.</p>
+          <div class="titleblock">
+            <div><span class="tb-label">Location</span><span class="tb-value">Vancouver, BC</span></div>
+            <div><span class="tb-label">Architect</span><span class="tb-value">Kengo Kuma &amp; Associates</span></div>
+            <div><span class="tb-label">Product</span><span class="tb-value">Custom extrusion — 26,000+ lin. ft.</span></div>
+            <div><span class="tb-label">Finish</span><span class="tb-value">National Walnut</span></div>
+          </div>
+          <div style="margin-top: var(--board); display: flex; gap: 12px 32px; flex-wrap: wrap; align-items: center;">
+            <a class="btn btn-ink" href="case-alberni.html">Read the full case study →</a>
+            <a class="link-rule" href="design-assist.html">Bring us your non-standard vision →</a>
+          </div>
+        </div>
+      </article>
+      <p class="gap-flag" data-reveal style="margin-top: var(--board); max-width: 72ch;">More case studies are in production.</p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band" aria-labelledby="pcta-h">
+    <div class="container cta-inner">
+      <div data-reveal>
+        <h2 id="pcta-h">Your building<br>belongs here.</h2>
+        <p>Start where every project on this page started: with a sample in hand.</p>
+      </div>
+      <a class="btn btn-finish" data-reveal href="finishes.html#samples">Order samples →</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span class="wordmark" style="font-size: 15px; color: var(--paper);">Longboard<sup>®</sup></span>
+    <nav aria-label="Footer">
+      <a href="applications.html">Applications</a>
+      <a href="hitch.html">Systems</a>
+      <a href="finishes.html">Finishes</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#resources">Resources</a>
+      <a href="design-assist.html">Support</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <span class="foot-legal">1777 Clearbrook Rd, Abbotsford BC · 1-800-604-0343 · © 2026 Longboard®</span>
+  </div>
+</footer>
+</body>
+</html>
