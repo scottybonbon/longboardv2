@@ -38,7 +38,9 @@
     font-weight: 800; font-size: clamp(26px, 2.6vw, 38px); text-transform: uppercase; line-height: 1;
   }
   .door .door-list { margin-top: 22px; font-size: 14.5px; line-height: 1.8; color: rgba(245,244,242,0.85); }
-  .door .door-arrow { margin-top: auto; padding-top: 32px; font-family: Archivo, sans-serif; font-size: 15px; font-weight: 500; }
+  .door .door-arrow { margin-top: auto; padding-top: 32px; font-family: Archivo, sans-serif; font-size: 15px; font-weight: 500; transition: transform 0.3s cubic-bezier(0.22,1,0.36,1); }
+  .door:hover { color: var(--paper); }
+  .door:hover .door-arrow { transform: translateX(6px); }
   .doors { display: grid; grid-template-columns: 1fr; gap: 4px; }
   @media (min-width: 900px) { .doors { grid-template-columns: 1fr 1fr 1fr; } }
 </style>
@@ -87,8 +89,6 @@
     <img class="hero-img" src="assets/hero-volume.jpg" alt="Woodgrain aluminum cladding wrapping a cantilevered building volume against a clear sky" fetchpriority="high">
     <div class="hero-scrim" aria-hidden="true"></div>
     <div aria-hidden="true"><div class="hero-course"></div><div class="hero-course"></div><div class="hero-course"></div></div>
-    <!-- installation reveal v2 — seam flashes at the seat moments (LB-CD 2.0/04, adopted) -->
-    <div aria-hidden="true"><div class="hero-flash"></div><div class="hero-flash"></div><div class="hero-flash"></div></div>
     <div class="container">
       <h1 class="display" style="font-size: clamp(52px, 8.6vw, 150px);">
         <span class="hero-line"><span style="animation-delay: 0.9s;">Wood&rsquo;s soul.</span></span>
