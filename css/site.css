@@ -179,7 +179,7 @@ img { display: block; }
   border-bottom-color: rgba(23, 25, 27, 0.12);
 }
 .site-header.is-solid .wordmark, .site-header.is-solid .site-nav a, .site-header.is-solid .nav-toggle { color: var(--ink); }
-.site-header.is-solid .header-cta { background: var(--ink); color: var(--primer); }
+.site-header.is-solid .header-cta { background: var(--brand-navy-deep); color: var(--primer); }
 .site-header.is-solid .mark { filter: none; }
 
 .mobile-nav {
